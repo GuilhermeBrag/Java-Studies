@@ -19,12 +19,18 @@ public class JsonScraper {
                         "Sebastião Carvalho"
                 }""";
 
-        String regex = "\"(\\b[A-Z].*)\"";
+//        nomemando
+        String regex = ".*?\"nome\":\\s*\"(?<nome>.*?)\".*?";
+
+////        sem nomear
+//        String regex =".*?\"nome\":\\s*\"(.*?)\".*?";
+
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(json);
 
         while (matcher.find()) {
-            System.out.println(matcher.group(1));
+            System.out.println(matcher.group("nome"));
+//            System.out.println(matcher.group(1));
         }
     }
 
