@@ -49,7 +49,7 @@ public class Main {
             String valorFormatado = NumberFormat.getCurrencyInstance(new Locale("pt", "BR")).format(valorRecebivel);
             System.out.println("Valor do Recebível com vencimento em 25/07/2023: " + valorFormatado);
         } else {
-            System.out.println("Nenhum recebível encontrado com vencimento em 25/07/2023");
+            throw new RuntimeException("Nenhum recebível encontrado com vencimento em 25/07/2023");
         }
 
 
@@ -65,7 +65,7 @@ public class Main {
             long prazoEmDias = ChronoUnit.DAYS.between(recebivel2.getDataEmissao(), recebivel2.getDataVencimento());
             System.out.println("Prazo em dias entre a emissão e o vencimento do recebível com vencimento em 12/10/2023: " + prazoEmDias + " dias");
         } else {
-            System.out.println("Nenhum recebível encontrado com vencimento em 12/10/2023");
+            throw new RuntimeException("Nenhum recebível encontrado com vencimento em 12/10/2023");
         }
 
         System.out.println("-----------------------------------------------");
