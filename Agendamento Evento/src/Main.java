@@ -29,7 +29,7 @@ public class Main {
         private static LocalDate requisitarData(String descricao) {
             while(true) {
                 try {
-                    System.out.print("Data do evento: ");
+                    System.out.print(descricao);
                     String data = SCANNER.nextLine();
 
                     return LocalDate.parse(data, FORMATTER_DATA);
@@ -43,7 +43,7 @@ public class Main {
         private static LocalTime requisitarHorario(String descricao) {
             while (true) {
                 try {
-                    System.out.print("Horário do evento: ");
+                    System.out.print(descricao);
                     String horario = SCANNER.nextLine();
 
                     return LocalTime.parse(horario,FORMATTER_HORARIO);
