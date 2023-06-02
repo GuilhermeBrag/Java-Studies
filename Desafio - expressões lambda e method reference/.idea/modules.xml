@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/25.17. Desafio - expressões lambda e method reference.iml" filepath="$PROJECT_DIR$/.idea/25.17. Desafio - expressões lambda e method reference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desafio-lambda-method-reference/desafio-lambda-method-reference.iml" filepath="$PROJECT_DIR$/desafio-lambda-method-reference/desafio-lambda-method-reference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desafio-lambda-method-reference-resolvido/desafio-lambda-method-reference-resolvido.iml" filepath="$PROJECT_DIR$/desafio-lambda-method-reference-resolvido/desafio-lambda-method-reference-resolvido.iml" />
+    </modules>
+  </component>
+</project>
